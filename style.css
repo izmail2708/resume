@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,12 +21,17 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.2;
     font-family: 'Work Sans', sans-serif;
 }
 ol, ul {
@@ -51,12 +56,17 @@ table {
     padding: 0 20px;
 }
 
+header{
+    margin-bottom: 60px;
+}
+
 .header__wrap{
     padding-top: 30px;
     display: flex;
 }
 
 .header__photo{
+    border-radius: 30px;
     width: 250px;
     height: auto;
 }
@@ -77,4 +87,77 @@ table {
     font-size: 36px;
     font-weight: 200;
     text-align: center;
+}
+
+.main__wrap{
+    display: flex;
+}
+
+.education{
+    padding-right: 30px;
+    flex-basis: 60%;
+    border-right: 1px solid #5eb250;
+}
+
+.main__info{
+    padding-left: 30px;
+    flex-basis: 40%;
+}
+
+.main__title{
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.education__year{
+    display: flex;
+}
+
+.main__circle{
+    height: 25px;
+    width: 25px;
+}
+
+.education__info{
+    width: 85%;
+}
+
+.education__number{
+    line-height: 25px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.education__title{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main__text{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.education__title a{
+    color: #5eb250;
+}
+
+.main__skill{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.hardskills{
+    margin-bottom: 40px;
+}
+
+.softskills{
+    margin-bottom: 40px;
 }
