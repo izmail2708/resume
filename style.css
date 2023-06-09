@@ -89,6 +89,10 @@ header{
     text-align: center;
 }
 
+main{
+    margin-bottom: 30px;
+}
+
 .main__wrap{
     display: flex;
 }
@@ -158,6 +162,124 @@ header{
     margin-bottom: 40px;
 }
 
+.contacts{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .softskills{
     margin-bottom: 40px;
+}
+
+.contacts__link{
+    color: #5eb250;
+    font-size: 18px;
+}
+
+.education__title span{
+    font-size: 15px;
+    line-height: 0.5;
+    font-weight: 100;
+}
+
+@media (max-width: 1150px) {
+    .header__title{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .header__text{
+        font-size: 30px;
+    }
+
+    .header__info{
+        padding: 0 60px;
+    }
+
+    .education__info{
+        width: 90%;
+    }
+
+    .main__wrap{
+        flex-direction: column;
+    }
+
+    .education{
+        padding-right: 0;
+        flex-basis: auto;
+        border-right: none;
+    }
+
+    .main__info{
+        padding-left: 0;
+        flex-basis: auto;
+    }
+}
+
+@media (max-width: 925px) {
+    .education__info{
+        width: 80%;
+    }
+
+    .header__title{
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .header__text{
+        font-size: 25px;
+    }
+
+    .header__info{
+        padding: 0 30px;
+    }
+
+    .header__photo{
+        border-radius: 20px;
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 616px) {
+    .header__photo{
+        margin-bottom: 20px;
+    }
+
+    .header__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__circle{
+        width: 20px;
+        height: 20px;
+    }
+
+    .education__number{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .main__title{
+        margin-bottom: 25px;
+        font-size: 40px;
+    }
+
+    .education__title{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    .main__text{
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .education__info{
+        width: 75%;
+    }
 }
